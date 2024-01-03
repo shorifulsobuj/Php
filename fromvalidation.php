@@ -42,22 +42,23 @@ if (isset($_POST['sub123']) && $_SERVER['REQUEST_METHOD'] == "POST") {
 }
 
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>From Validation</title>
     <!-- bootstrap 5.1.3 css cdn -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css">
 </head>
 
 <body>
 
-    <div class="container">
+    <div class="container ">
         <div class="row min-vh-100 d-flex">
-            <div class="col-md-6 m-auto border rounded shadow p-4">
+            <div class="col-md-6 m-auto border rounded shadow p-3">
                 <form action="<?= $_SERVER['PHP_SELF']; ?>" method="post" enctype="multipart/form-dataS">
                     <div class="mb-3 form-floating">
                         <input type="text" placeholder="Your Name" name="name" class="form-control <?= isset($errName) ? 'is-invalid' : null; ?> <?= isset($crrName) ? 'is-valid' : null ?>" value="<?= $name ?? null ?>">
@@ -125,11 +126,6 @@ if (isset($_POST['sub123']) && $_SERVER['REQUEST_METHOD'] == "POST") {
                             }
                         }
                         ?>
-                    </div>
-
-                    <div class="fileuplode py-3">
-                    <input type="file" name="file">
-                    <input type="submit" value="Upload" name="submit">
                     </div>
 
                     <input type="submit" class="btn btn-dark btn-lg" name="sub123">
