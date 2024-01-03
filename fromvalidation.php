@@ -50,7 +50,6 @@ if (isset($_POST['sub123']) && $_SERVER['REQUEST_METHOD'] == "POST") {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>From Validation</title>
-    <!-- bootstrap 5.1.3 css cdn -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css">
 </head>
 
@@ -60,7 +59,11 @@ if (isset($_POST['sub123']) && $_SERVER['REQUEST_METHOD'] == "POST") {
         <div class="row min-vh-100 d-flex">
             <div class="col-md-6 m-auto border rounded shadow p-3">
                 <form action="<?= $_SERVER['PHP_SELF']; ?>" method="post" enctype="multipart/form-dataS">
-                    <div class="mb-3 form-floating">
+                    
+                <div class="text-center">
+                    <h1>From Validation</h1>
+                </div>
+                <div class="mb-3 form-floating">
                         <input type="text" placeholder="Your Name" name="name" class="form-control <?= isset($errName) ? 'is-invalid' : null; ?> <?= isset($crrName) ? 'is-valid' : null ?>" value="<?= $name ?? null ?>">
                         <label for="" class="">Your Name</label>
                         <div class="invalid-feedback ">
@@ -91,6 +94,10 @@ if (isset($_POST['sub123']) && $_SERVER['REQUEST_METHOD'] == "POST") {
                         <div for="" class="form-check form-check-inline">
                             <input type="radio" value="Female" class="form-check-input " id="female" <?= isset($gender) && $gender == "Female" ? "checked" : null ?> name="gender">
                             <label for="female" class="form-check-label">Female</label>
+                        </div>
+                        <div for="" class="form-check form-check-inline">
+                            <input type="radio" value="other" class="form-check-input " id="other" <?= isset($gender) && $gender == "Other" ? "checked" : null ?> name="gender">
+                            <label for="other" class="form-check-label">Other</label>
                         </div>
                     </div>
                     <div class="<?= isset($errGender) ? 'text-danger' : (isset($gender) ? "text-success" : null) ?> mb-3">
@@ -128,14 +135,14 @@ if (isset($_POST['sub123']) && $_SERVER['REQUEST_METHOD'] == "POST") {
                         ?>
                     </div>
 
-                    <input type="submit" class="btn btn-dark btn-lg" name="sub123">
+                    <input type="submit" class="btn btn-dark btn-lg btn-center" name="sub123">
                     </div>
                 </form>
             </div>
         </div>
     </div>
 
-    <!-- bootstrap 5.1.3 js cdn -->
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.min.js"></script>
 </body>
 
