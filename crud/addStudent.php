@@ -1,5 +1,24 @@
 <?php
 require_once("./header.php");
+if(isset($_POST['ast'])) {
+    $name = $_POST['name'];
+    $city = $_POST['city'];
+
+    $name = $conn->real_escape_string($name);
+    $city = $conn->real_escape_string($city);
+
+    $sql = "INSERT INTO student (name, city) VALUES ('$name', '$city')";
+    $result = $conn->query($sql);
+
+    if($result) {
+        echo "Student added successfully";
+        echo "<script>setTimeout(()=> location.href='./', 2000)</script>";
+    } else {
+        echo "Student not A
+        dded";
+    }
+
+}
 ?>
 
 <form action="" method="post">
