@@ -7,7 +7,7 @@ if(isset($_POST['ast'])) {
     $name = $conn->real_escape_string($name);
     $city = $conn->real_escape_string($city);
 
-    $sql = "INSERT INTO student (name, city) VALUES ('$name', '$city')";
+    $sql = "INSERT INTO students (name, city) VALUES ('$name', '$city')";
     $result = $conn->query($sql);
 
     if($result) {
@@ -32,5 +32,3 @@ if(isset($_POST['ast'])) {
 <?php
 require_once("./footer.php");
 ?>
-
-<!-- https://www.youtube.com/watch?v=oqmaCDYcz_E -->
