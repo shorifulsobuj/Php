@@ -1,19 +1,19 @@
 <?php
 require_once("./header.php");
-$sql = "SELECT * FROM 'users'";
+$sql = "SELECT * FROM `students`"; 
 $result = $conn->query($sql);
+
 if($result->num_rows == 0) {
     echo "No users found";
-}else{
+} else {
 ?>
- <table>
+ <table border="1" cellpadding="10" cellspacing="0">
     <tr>
-        <th>Sn</th>
-        <th>Name</th>
-        <th>City</th>
-        <th>Actions</th>
+        <td>SN</td>
+        <td>Name</td>
+        <td>City</td>
+        <td>Actions</td>
     </tr>
- 
  <?php
  $sn = 1;
  while ($row = $result->fetch_object()) {
@@ -23,17 +23,17 @@ if($result->num_rows == 0) {
         <td><?= $row->name ?></td>
         <td><?= $row->city ?></td>
         <td>
-            <a href="./editStudent.php"?<?= $row->id ?> ><button>Edit</button></a>
-            <a href="./deleteStudent.php"<?= $row->id ?> ><button>Delete</button></a>
+            <a href="./editStudent.php?id=<?= $row->id ?>"><button>Edit</button></a>
+            <a href="./deleteStudent.php?id=<?= $row->id ?>"><button>Delete</button></a> <!-- Add equals sign here -->
         </td>
     </tr>
-    <?php }?>
+    <?php } ?>
     </table>
  <?php 
 }
- ?>
+?>
 
 
 <?php
 require_once("./footer.php");
-?>
+?> 

@@ -14,8 +14,7 @@ if(isset($_POST['ast'])) {
         echo "Student added successfully";
         echo "<script>setTimeout(()=> location.href='./', 2000)</script>";
     } else {
-        echo "Student not A
-        dded";
+        echo "Student not Added";
     }
 
 }
