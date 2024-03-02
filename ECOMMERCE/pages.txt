@@ -1,0 +1,27 @@
+home page
+about
+single product 
+cart 
+checkout page 
+contact 
+
+
+user penel 
+    - change password 
+    - change profile image 
+    - logout
+
+
+Account 
+    - log in page 
+    - log out page 
+
+Admin panel 
+    - dashboard 
+    - all product
+    - edit product
+    - delete product 
+    - add product
+    - edit orders
+    - delete orders
+    - all complete orders 
