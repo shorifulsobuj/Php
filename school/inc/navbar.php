@@ -35,10 +35,21 @@
       </ul>
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
-          <a class="nav-link text-white" href="#"><i class="fa fa-facebook"></i></a>
+          <a class="nav-link text-white" href="#"><i class="fa-brands fa-facebook"></i></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-white" href="#"><i class="fa fa-youtube"></i></a>
+          <a class="nav-link text-white" href="#"><i class="fa-brands fa-youtube"></i></a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <i class="fa-solid fa-gear"></i>
+        </a>
+        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+          <li><a class="dropdown-item" href="#">Action</a></li>
+          <li><a class="dropdown-item" href="#">Another action</a></li>
+          <li><hr class="dropdown-divider"></li>
+          <li><a class="dropdown-item" href="#">Something else here</a></li>
+        </ul>
         </li>
       </ul>
     </div>
