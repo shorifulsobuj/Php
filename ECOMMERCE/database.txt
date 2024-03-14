@@ -1,17 +1,21 @@
-users 
-    - name 
-    - email 
-    - picture 
+users
+    - name
+    - email
+    - password
+    - img
+    - role
+    - city
 
-product 
-    - name 
-    - regular price 
-    - discount price 
-    - brand 
-    - quantity
+products
+    - name
+    - regular_price
+    - discount_price
+    - brand
+    - description
+    - img
 
 orders
     - user_id
     - product_id
     - quantity
-    - total_price
+    - total_price 

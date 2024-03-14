@@ -1,17 +1,15 @@
 <?php
 
-    namespace classes\navbar;
-    
+namespace classes\navbar;
+
 class navbar
 {
     public function checkPage($pageName)
-     {
+    {
         $page = basename($_SERVER['PHP_SELF']);
         if ($page === $pageName) {
-        return 'active' ;
+            return 'active';
         }
         return null;
     }
 }
-
-?>

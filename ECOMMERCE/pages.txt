@@ -1,27 +1,26 @@
 home page
 about
-single product 
-cart 
-checkout page 
-contact 
+single product
+cart
+checkout page
+contact
 
-
-user penel 
-    - change password 
-    - change profile image 
+user panel
+    - change password
+    - change profile image
+    - update-profile
     - logout
 
+Account
+    - login page
+    - signup page
 
-Account 
-    - log in page 
-    - log out page 
-
-Admin panel 
-    - dashboard 
-    - all product
-    - edit product
-    - delete product 
+Admin panel
+    - dashboard
+    - all products
     - add product
+    - all orders
     - edit orders
     - delete orders
-    - all complete orders 
+    - all completed orders
+

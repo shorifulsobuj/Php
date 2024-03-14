@@ -1,8 +1,8 @@
 <?php
-require_once 'header.php';
-?>
+require_once './classes/sessionClass.php';
 
+use classes\session\sessionClass as session;
 
-<?php
-require_once 'footer.php';
-?>
+$session = new session();
+$session->unsetSession('user');
+header('Location: index.php');
